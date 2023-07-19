@@ -660,9 +660,14 @@ class _GraphTestState extends State<GraphTest> {
                                           .scaffoldBackgroundColor,
                                     ),
                                     checkToShowSpotLine: (spot) {
-                                      return _touchedSpot
-                                              .value.lineBarSpots!.first.x <
-                                          spot.x;
+                                      if (_touchedSpot
+                                          .value.lineBarSpots!.isNotEmpty) {
+                                        return false;
+                                      } else {
+                                        return _touchedSpot
+                                                .value.lineBarSpots!.first.x <
+                                            spot.x;
+                                      }
                                     },
                                   ),
                                   gradient: LinearGradient(

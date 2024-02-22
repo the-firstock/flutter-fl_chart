@@ -24,7 +24,7 @@ class LineChartLeaf extends LeafRenderObjectWidget {
         context,
         data,
         targetData,
-        MediaQuery.of(context).textScaleFactor,
+        1, //  MediaQuery.of(context).textScaleFactor,
       );
 
   @override
@@ -32,7 +32,7 @@ class LineChartLeaf extends LeafRenderObjectWidget {
     renderObject
       ..data = data
       ..targetData = targetData
-      ..textScale = MediaQuery.of(context).textScaleFactor
+      ..textScale = 1 // MediaQuery.of(context).textScaleFactor
       ..buildContext = context;
   }
 }

@@ -19,7 +19,7 @@ class BarChartLeaf extends LeafRenderObjectWidget {
         context,
         data,
         targetData,
-        MediaQuery.of(context).textScaleFactor,
+        MediaQuery.textScalerOf(context).scale(1),
       );
 
   @override
@@ -27,7 +27,7 @@ class BarChartLeaf extends LeafRenderObjectWidget {
     renderObject
       ..data = data
       ..targetData = targetData
-      ..textScale = MediaQuery.of(context).textScaleFactor
+      ..textScale = 1 // MediaQuery.of(context).textScaleFactor
       ..buildContext = context;
   }
 }

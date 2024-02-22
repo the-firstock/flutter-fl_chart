@@ -1043,6 +1043,9 @@ class LineChartPainter extends AxisChartPainter<LineChartData> {
       tooltipTopPosition =
           mostTopOffset.dy - tooltipHeight - tooltipData.tooltipMargin;
     }
+    if (tooltipTopPosition.isNegative) {
+      tooltipTopPosition = tooltipData.tooltipMargin;
+    }
 
     final tooltipLeftPosition = getTooltipLeft(
       mostTopOffset.dx,

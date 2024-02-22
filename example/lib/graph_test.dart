@@ -391,7 +391,264 @@ class _GraphTestState extends State<GraphTest> {
   final ValueNotifier<List<ChartData2>> _graph2 = ValueNotifier([]);
   final ValueNotifier<LineTouchResponse> _touchedSpot =
       ValueNotifier(const LineTouchResponse([]));
-
+  var mapList = [
+    {"xAxis": 20240, "payOff": -1087, "project": -1097},
+    {"xAxis": 20250, "payOff": -1087, "project": -1097},
+    {"xAxis": 20260, "payOff": -1087, "project": -1097},
+    {"xAxis": 20270, "payOff": -1087, "project": -1097},
+    {"xAxis": 20280, "payOff": -1087, "project": -1097},
+    {"xAxis": 20290, "payOff": -1087, "project": -1097},
+    {"xAxis": 20300, "payOff": -1087, "project": -1097},
+    {"xAxis": 20310, "payOff": -1087, "project": -1097},
+    {"xAxis": 20320, "payOff": -1087, "project": -1097},
+    {"xAxis": 20330, "payOff": -1087, "project": -1097},
+    {"xAxis": 20340, "payOff": -1087, "project": -1097},
+    {"xAxis": 20350, "payOff": -1087, "project": -1097},
+    {"xAxis": 20360, "payOff": -1087, "project": -1097},
+    {"xAxis": 20370, "payOff": -1087, "project": -1097},
+    {"xAxis": 20380, "payOff": -1087, "project": -1097},
+    {"xAxis": 20390, "payOff": -1087, "project": -1097},
+    {"xAxis": 20400, "payOff": -1087, "project": -1097},
+    {"xAxis": 20410, "payOff": -1087, "project": -1097},
+    {"xAxis": 20420, "payOff": -1087, "project": -1097},
+    {"xAxis": 20430, "payOff": -1087, "project": -1097},
+    {"xAxis": 20440, "payOff": -1087, "project": -1097},
+    {"xAxis": 20450, "payOff": -1087, "project": -1097},
+    {"xAxis": 20460, "payOff": -1087, "project": -1097},
+    {"xAxis": 20470, "payOff": -1087, "project": -1097},
+    {"xAxis": 20480, "payOff": -1087, "project": -1097},
+    {"xAxis": 20490, "payOff": -1087, "project": -1097},
+    {"xAxis": 20500, "payOff": -1087, "project": -1097},
+    {"xAxis": 20510, "payOff": -1087, "project": -1097},
+    {"xAxis": 20520, "payOff": -1087, "project": -1097},
+    {"xAxis": 20530, "payOff": -1087, "project": -1097},
+    {"xAxis": 20540, "payOff": -1087, "project": -1097},
+    {"xAxis": 20550, "payOff": -1087, "project": -1097},
+    {"xAxis": 20560, "payOff": -1087, "project": -1097},
+    {"xAxis": 20570, "payOff": -1087, "project": -1097},
+    {"xAxis": 20580, "payOff": -1087, "project": -1097},
+    {"xAxis": 20590, "payOff": -1087, "project": -1097},
+    {"xAxis": 20600, "payOff": -1087, "project": -1097},
+    {"xAxis": 20610, "payOff": -1087, "project": -1097},
+    {"xAxis": 20620, "payOff": -1087, "project": -1097},
+    {"xAxis": 20630, "payOff": -1087, "project": -1097},
+    {"xAxis": 20640, "payOff": -1087, "project": -1097},
+    {"xAxis": 20650, "payOff": -1087, "project": -1097},
+    {"xAxis": 20660, "payOff": -1087, "project": -1097},
+    {"xAxis": 20670, "payOff": -1087, "project": -1097},
+    {"xAxis": 20680, "payOff": -1087, "project": -1097},
+    {"xAxis": 20690, "payOff": -1087, "project": -1097},
+    {"xAxis": 20700, "payOff": -1087, "project": -1097},
+    {"xAxis": 20710, "payOff": -1087, "project": -1097},
+    {"xAxis": 20720, "payOff": -1087, "project": -1097},
+    {"xAxis": 20730, "payOff": -1087, "project": -1097},
+    {"xAxis": 20740, "payOff": -1087, "project": -1097},
+    {"xAxis": 20750, "payOff": -1087, "project": -1098},
+    {"xAxis": 20760, "payOff": -1087, "project": -1098},
+    {"xAxis": 20770, "payOff": -1087, "project": -1098},
+    {"xAxis": 20780, "payOff": -1087, "project": -1098},
+    {"xAxis": 20790, "payOff": -1087, "project": -1098},
+    {"xAxis": 20800, "payOff": -1087, "project": -1099},
+    {"xAxis": 20810, "payOff": -1087, "project": -1099},
+    {"xAxis": 20820, "payOff": -1087, "project": -1100},
+    {"xAxis": 20830, "payOff": -1087, "project": -1099},
+    {"xAxis": 20840, "payOff": -1087, "project": -1100},
+    {"xAxis": 20850, "payOff": -1087, "project": -1101},
+    {"xAxis": 20860, "payOff": -1087, "project": -1102},
+    {"xAxis": 20870, "payOff": -1087, "project": -1103},
+    {"xAxis": 20880, "payOff": -1087, "project": -1105},
+    {"xAxis": 20890, "payOff": -1087, "project": -1106},
+    {"xAxis": 20900, "payOff": -1087, "project": -1108},
+    {"xAxis": 20910, "payOff": -1087, "project": -1109},
+    {"xAxis": 20920, "payOff": -1087, "project": -1111},
+    {"xAxis": 20930, "payOff": -1087, "project": -1114},
+    {"xAxis": 20940, "payOff": -1087, "project": -1117},
+    {"xAxis": 20950, "payOff": -1087, "project": -1121},
+    {"xAxis": 20960, "payOff": -1087, "project": -1125},
+    {"xAxis": 20970, "payOff": -1087, "project": -1129},
+    {"xAxis": 20980, "payOff": -1087, "project": -1134},
+    {"xAxis": 20990, "payOff": -1087, "project": -1139},
+    {"xAxis": 21000, "payOff": -1087, "project": -1145},
+    {"xAxis": 21010, "payOff": -1087, "project": -1152},
+    {"xAxis": 21020, "payOff": -1087, "project": -1157},
+    {"xAxis": 21030, "payOff": -1087, "project": -1166},
+    {"xAxis": 21040, "payOff": -1087, "project": -1173},
+    {"xAxis": 21050, "payOff": -1087, "project": -1182},
+    {"xAxis": 21060, "payOff": -1087, "project": -1191},
+    {"xAxis": 21070, "payOff": -1087, "project": -1200},
+    {"xAxis": 21080, "payOff": -1087, "project": -1210},
+    {"xAxis": 21090, "payOff": -1087, "project": -1220},
+    {"xAxis": 21100, "payOff": -1087, "project": -1228},
+    {"xAxis": 21110, "payOff": -1087, "project": -1238},
+    {"xAxis": 21120, "payOff": -1087, "project": -1244},
+    {"xAxis": 21130, "payOff": -1087, "project": -1252},
+    {"xAxis": 21140, "payOff": -1087, "project": -1257},
+    {"xAxis": 21150, "payOff": -1087, "project": -1259},
+    {"xAxis": 21160, "payOff": -1087, "project": -1257},
+    {"xAxis": 21170, "payOff": -1087, "project": -1251},
+    {"xAxis": 21180, "payOff": -1087, "project": -1241},
+    {"xAxis": 21190, "payOff": -1087, "project": -1224},
+    {"xAxis": 21200, "payOff": -1087, "project": -1199},
+    {"xAxis": 21210, "payOff": -1087, "project": -1167},
+    {"xAxis": 21220, "payOff": -1087, "project": -1123},
+    {"xAxis": 21230, "payOff": -1087, "project": -1072},
+    {"xAxis": 21240, "payOff": -1087, "project": -1009},
+    {"xAxis": 21250, "payOff": -1087, "project": -932},
+    {"xAxis": 21260, "payOff": -1087, "project": -845},
+    {"xAxis": 21270, "payOff": -1087, "project": -743},
+    {"xAxis": 21280, "payOff": -1087, "project": -629},
+    {"xAxis": 21290, "payOff": -1087, "project": -502},
+    {"xAxis": 21300, "payOff": -1087, "project": -363},
+    {"xAxis": 21310, "payOff": -101, "project": -210},
+    {"xAxis": 21320, "payOff": 900, "project": -49},
+    {"xAxis": 21330, "payOff": 1901, "project": 122},
+    {"xAxis": 21340, "payOff": 2902, "project": 302},
+    {"xAxis": 21350, "payOff": 3903, "project": 486},
+    {"xAxis": 21360, "payOff": 3913, "project": 676},
+    {"xAxis": 21370, "payOff": 3913, "project": 868},
+    {"xAxis": 21380, "payOff": 3913, "project": 1061},
+    {"xAxis": 21390, "payOff": 3913, "project": 1252},
+    {"xAxis": 21400, "payOff": 3913, "project": 1441},
+    {"xAxis": 21410, "payOff": 3913, "project": 1627},
+    {"xAxis": 21420, "payOff": 3913, "project": 1806},
+    {"xAxis": 21430, "payOff": 3913, "project": 1978},
+    {"xAxis": 21440, "payOff": 3913, "project": 2142},
+    {"xAxis": 21450, "payOff": 3913, "project": 2298},
+    {"xAxis": 21460, "payOff": 3913, "project": 2447},
+    {"xAxis": 21470, "payOff": 3913, "project": 2585},
+    {"xAxis": 21480, "payOff": 3913, "project": 2714},
+    {"xAxis": 21490, "payOff": 3913, "project": 2833},
+    {"xAxis": 21500, "payOff": 3913, "project": 2943},
+    {"xAxis": 21510, "payOff": 3913, "project": 3044},
+    {"xAxis": 21520, "payOff": 3913, "project": 3135},
+    {"xAxis": 21530, "payOff": 3913, "project": 3220},
+    {"xAxis": 21540, "payOff": 3913, "project": 3297},
+    {"xAxis": 21550, "payOff": 3913, "project": 3365},
+    {"xAxis": 21560, "payOff": 3913, "project": 3428},
+    {"xAxis": 21570, "payOff": 3913, "project": 3485},
+    {"xAxis": 21580, "payOff": 3913, "project": 3534},
+    {"xAxis": 21590, "payOff": 3913, "project": 3580},
+    {"xAxis": 21600, "payOff": 3913, "project": 3620},
+    {"xAxis": 21610, "payOff": 3913, "project": 3656},
+    {"xAxis": 21620, "payOff": 3913, "project": 3686},
+    {"xAxis": 21630, "payOff": 3913, "project": 3715},
+    {"xAxis": 21640, "payOff": 3913, "project": 3739},
+    {"xAxis": 21650, "payOff": 3913, "project": 3761},
+    {"xAxis": 21660, "payOff": 3913, "project": 3780},
+    {"xAxis": 21670, "payOff": 3913, "project": 3797},
+    {"xAxis": 21680, "payOff": 3913, "project": 3811},
+    {"xAxis": 21690, "payOff": 3913, "project": 3823},
+    {"xAxis": 21700, "payOff": 3913, "project": 3835},
+    {"xAxis": 21710, "payOff": 3913, "project": 3845},
+    {"xAxis": 21720, "payOff": 3913, "project": 3853},
+    {"xAxis": 21730, "payOff": 3913, "project": 3861},
+    {"xAxis": 21740, "payOff": 3913, "project": 3868},
+    {"xAxis": 21750, "payOff": 3913, "project": 3872},
+    {"xAxis": 21760, "payOff": 3913, "project": 3877},
+    {"xAxis": 21770, "payOff": 3913, "project": 3880},
+    {"xAxis": 21780, "payOff": 3913, "project": 3884},
+    {"xAxis": 21790, "payOff": 3913, "project": 3887},
+    {"xAxis": 21800, "payOff": 3913, "project": 3889},
+    {"xAxis": 21810, "payOff": 3913, "project": 3892},
+    {"xAxis": 21820, "payOff": 3913, "project": 3894},
+    {"xAxis": 21830, "payOff": 3913, "project": 3895},
+    {"xAxis": 21840, "payOff": 3913, "project": 3897},
+    {"xAxis": 21850, "payOff": 3913, "project": 3898},
+    {"xAxis": 21860, "payOff": 3913, "project": 3899},
+    {"xAxis": 21870, "payOff": 3913, "project": 3899},
+    {"xAxis": 21880, "payOff": 3913, "project": 3900},
+    {"xAxis": 21890, "payOff": 3913, "project": 3900},
+    {"xAxis": 21900, "payOff": 3913, "project": 3901},
+    {"xAxis": 21910, "payOff": 3913, "project": 3901},
+    {"xAxis": 21920, "payOff": 3913, "project": 3901},
+    {"xAxis": 21930, "payOff": 3913, "project": 3902},
+    {"xAxis": 21940, "payOff": 3913, "project": 3902},
+    {"xAxis": 21950, "payOff": 3913, "project": 3902},
+    {"xAxis": 21960, "payOff": 3913, "project": 3903},
+    {"xAxis": 21970, "payOff": 3913, "project": 3903},
+    {"xAxis": 21980, "payOff": 3913, "project": 3903},
+    {"xAxis": 21990, "payOff": 3913, "project": 3903},
+    {"xAxis": 22000, "payOff": 3913, "project": 3903},
+    {"xAxis": 22010, "payOff": 3913, "project": 3903},
+    {"xAxis": 22020, "payOff": 3913, "project": 3903},
+    {"xAxis": 22030, "payOff": 3913, "project": 3903},
+    {"xAxis": 22040, "payOff": 3913, "project": 3903},
+    {"xAxis": 22050, "payOff": 3913, "project": 3903},
+    {"xAxis": 22060, "payOff": 3913, "project": 3903},
+    {"xAxis": 22070, "payOff": 3913, "project": 3903},
+    {"xAxis": 22080, "payOff": 3913, "project": 3903},
+    {"xAxis": 22090, "payOff": 3913, "project": 3903},
+    {"xAxis": 22100, "payOff": 3913, "project": 3903},
+    {"xAxis": 22110, "payOff": 3913, "project": 3903},
+    {"xAxis": 22120, "payOff": 3913, "project": 3903},
+    {"xAxis": 22130, "payOff": 3913, "project": 3903},
+    {"xAxis": 22140, "payOff": 3913, "project": 3903},
+    {"xAxis": 22150, "payOff": 3913, "project": 3903},
+    {"xAxis": 22160, "payOff": 3913, "project": 3903},
+    {"xAxis": 22170, "payOff": 3913, "project": 3903},
+    {"xAxis": 22180, "payOff": 3913, "project": 3903},
+    {"xAxis": 22190, "payOff": 3913, "project": 3903},
+    {"xAxis": 22200, "payOff": 3913, "project": 3903},
+    {"xAxis": 22210, "payOff": 3913, "project": 3903},
+    {"xAxis": 22220, "payOff": 3913, "project": 3903},
+    {"xAxis": 22230, "payOff": 3913, "project": 3903},
+    {"xAxis": 22240, "payOff": 3913, "project": 3903},
+    {"xAxis": 22250, "payOff": 3913, "project": 3903},
+    {"xAxis": 22260, "payOff": 3913, "project": 3903},
+    {"xAxis": 22270, "payOff": 3913, "project": 3903},
+    {"xAxis": 22280, "payOff": 3913, "project": 3903},
+    {"xAxis": 22290, "payOff": 3913, "project": 3903},
+    {"xAxis": 22300, "payOff": 3913, "project": 3903},
+    {"xAxis": 22310, "payOff": 3913, "project": 3903},
+    {"xAxis": 22320, "payOff": 3913, "project": 3903},
+    {"xAxis": 22330, "payOff": 3913, "project": 3903},
+    {"xAxis": 22340, "payOff": 3913, "project": 3903},
+    {"xAxis": 22350, "payOff": 3913, "project": 3903},
+    {"xAxis": 22360, "payOff": 3913, "project": 3903},
+    {"xAxis": 22370, "payOff": 3913, "project": 3903},
+    {"xAxis": 22380, "payOff": 3913, "project": 3903},
+    {"xAxis": 22390, "payOff": 3913, "project": 3903},
+    {"xAxis": 22400, "payOff": 3913, "project": 3903},
+    {"xAxis": 22410, "payOff": 3913, "project": 3903},
+    {"xAxis": 22420, "payOff": 3913, "project": 3903},
+    {"xAxis": 22430, "payOff": 3913, "project": 3903},
+    {"xAxis": 22440, "payOff": 3913, "project": 3903},
+    {"xAxis": 22450, "payOff": 3913, "project": 3903},
+    {"xAxis": 22460, "payOff": 3913, "project": 3903},
+    {"xAxis": 22470, "payOff": 3913, "project": 3903},
+    {"xAxis": 22480, "payOff": 3913, "project": 3903},
+    {"xAxis": 22490, "payOff": 3913, "project": 3903},
+    {"xAxis": 22500, "payOff": 3913, "project": 3903},
+    {"xAxis": 22510, "payOff": 3913, "project": 3903},
+    {"xAxis": 22520, "payOff": 3913, "project": 3903},
+    {"xAxis": 22530, "payOff": 3913, "project": 3903},
+    {"xAxis": 22540, "payOff": 3913, "project": 3903},
+    {"xAxis": 22550, "payOff": 3913, "project": 3903},
+    {"xAxis": 22560, "payOff": 3913, "project": 3903},
+    {"xAxis": 22570, "payOff": 3913, "project": 3903},
+    {"xAxis": 22580, "payOff": 3913, "project": 3903},
+    {"xAxis": 22590, "payOff": 3913, "project": 3903},
+    {"xAxis": 22600, "payOff": 3913, "project": 3903},
+    {"xAxis": 22610, "payOff": 3913, "project": 3903},
+    {"xAxis": 22620, "payOff": 3913, "project": 3903},
+    {"xAxis": 22630, "payOff": 3913, "project": 3903},
+    {"xAxis": 22640, "payOff": 3913, "project": 3903},
+    {"xAxis": 22650, "payOff": 3913, "project": 3903},
+    {"xAxis": 22660, "payOff": 3913, "project": 3903},
+    {"xAxis": 22670, "payOff": 3913, "project": 3903},
+    {"xAxis": 22680, "payOff": 3913, "project": 3903},
+    {"xAxis": 22690, "payOff": 3913, "project": 3903},
+    {"xAxis": 22700, "payOff": 3913, "project": 3903},
+    {"xAxis": 22710, "payOff": 3913, "project": 3903},
+    {"xAxis": 22720, "payOff": 3913, "project": 3903},
+    {"xAxis": 22730, "payOff": 3913, "project": 3903},
+    {"xAxis": 22740, "payOff": 3913, "project": 3903},
+    {"xAxis": 22750, "payOff": 3913, "project": 3903},
+    {"xAxis": 22760, "payOff": 3913, "project": 3903},
+    {"xAxis": 22770, "payOff": 3913, "project": 3903},
+    {"xAxis": 22780, "payOff": 3913, "project": 3903},
+    {"xAxis": 22790, "payOff": 3913, "project": 3903}
+  ];
   @override
   void initState() {
     super.initState();
@@ -407,6 +664,25 @@ class _GraphTestState extends State<GraphTest> {
     var temp3 = _graph2.value;
     _graph2.value = [];
     _graph2.value = temp3;
+    _loadJson();
+  }
+
+  var temp3 = [];
+  _loadJson() {
+    try {
+      for (int i = 0; i < mapList.length; i++) {
+        Map<String, dynamic> map = (mapList[i]);
+
+        temp3.add([
+          map['project'] as num,
+          map['payOff'] as num,
+        ]);
+      }
+
+      setState(() {});
+    } on Exception catch (e) {
+      debugPrint('error $e');
+    }
   }
 
   @override
@@ -414,6 +690,162 @@ class _GraphTestState extends State<GraphTest> {
     return Scaffold(
       body: Column(
         children: [
+          AspectRatio(
+            aspectRatio: 2,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 15),
+              child: LineChart(
+                LineChartData(
+                  lineTouchData: LineTouchData(
+                    touchCallback:
+                        (FlTouchEvent event, LineTouchResponse? p1) {},
+                    getTouchedSpotIndicator: (
+                      LineChartBarData barData,
+                      List<int> spotIndexes,
+                    ) =>
+                        spotIndexes.map((int index) {
+                      const FlLine flLine = FlLine(
+                        color: Colors.grey,
+                        strokeWidth: 0.5,
+                        dashArray: <int>[
+                          4,
+                        ],
+                      );
+
+                      final FlDotData dotData = FlDotData(
+                        getDotPainter: (
+                          FlSpot p0,
+                          double p1,
+                          LineChartBarData p2,
+                          int p3,
+                        ) =>
+                            FlDotCirclePainter(
+                          strokeColor: Colors.red,
+                          radius: 2,
+                        ),
+                      );
+
+                      return TouchedSpotIndicatorData(
+                        flLine,
+                        dotData,
+                      );
+                    }).toList(),
+                    touchTooltipData: LineTouchTooltipData(
+                      maxContentWidth: 40.w,
+                      showOnTopOfTheChartBoxArea: true,
+                      fitInsideHorizontally: true,
+                      tooltipRoundedRadius: 2.sp,
+                      fitInsideVertically: true,
+                      tooltipBgColor: Colors.grey.shade600,
+                      tooltipPadding: EdgeInsets.all(2.sp),
+                      tooltipBorder: const BorderSide(
+                        color: Colors.transparent,
+                      ),
+                      getTooltipItems: (List<LineBarSpot> touchedSpots) {
+                        String diffPercent =
+                            (touchedSpots.first.y / touchedSpots.first.x)
+                                .toStringAsFixed(2);
+
+                        bool isNegative = diffPercent.contains('-');
+
+                        String symbol = !isNegative ? '+' : '';
+
+                        return <LineTooltipItem?>[
+                          LineTooltipItem(
+                            'When Payoff is at\n',
+                            TextStyle(color: Colors.grey.shade300),
+                            // AppText.l1!.cl(Colors.grey.shade300).tsc(0.8),
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: '${touchedSpots.first.x} ',
+                                // style: AppText.b3!.cl(Colors.white),
+                              ),
+                              TextSpan(
+                                text: '$symbol$diffPercent% ',
+                                // style: AppText.l1!.cl(
+                                //   isNegative ? AppColors.red : AppColors.green,
+                                // ),
+                              ),
+                            ],
+                          ),
+                          LineTooltipItem(
+                            'Project ',
+                            TextStyle(color: Colors.grey.shade300),
+                            // AppText.l1!.w(5).cl(Colors.grey.shade300),
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: symbol + touchedSpots.first.y.toString(),
+                                // style: AppText.l1!.cl(
+                                //   isNegative ? AppColors.red : AppColors.green,
+                                // ),
+                              ),
+                            ],
+                          ),
+                        ];
+                      },
+                    ),
+                  ),
+                  titlesData: const FlTitlesData(
+                    show: false,
+                  ),
+                  borderData: FlBorderData(
+                    show: false,
+                  ),
+                  gridData: const FlGridData(
+                    show: false,
+                  ),
+                  lineBarsData: <LineChartBarData>[
+                    LineChartBarData(
+                      spots: <FlSpot>[
+                        for (int i = 0; i < temp3.length; i++)
+                          FlSpot(
+                            temp3[i][0].toDouble(),
+                            temp3[i][1].toDouble(),
+                            // data[i].xAxis.toDouble(),
+                            // data[i].payOff.toDouble(),
+                          ),
+                      ],
+                      isCurved: true,
+                      // color: Colors.black,
+                      barWidth: 1.sp,
+                      isStrokeCapRound: true,
+                      dotData: const FlDotData(
+                        show: false,
+                      ),
+                      belowBarData: BarAreaData(
+                        show: true,
+                        gradient: LinearGradient(
+                          colors: <Color>[
+                            Colors.red.withOpacity(0.15),
+                            Colors.green.withOpacity(0.15),
+                          ],
+                        ),
+                      ),
+                    ),
+                    LineChartBarData(
+                      spots: <FlSpot>[
+                        for (int i = 0; i < temp3.length; i++)
+                          FlSpot(
+                            temp3[i][0].toDouble(),
+                            temp3[i][1].toDouble(),
+                          ),
+                      ],
+                      isCurved: true,
+                      color: Colors.purple,
+                      barWidth: 1.sp,
+                      isStrokeCapRound: true,
+                      dotData: const FlDotData(
+                        show: false,
+                      ),
+                      belowBarData: BarAreaData(
+                        color: Colors.transparent,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
           SizedBox(
             height: 30.h,
           ),

@@ -354,7 +354,7 @@ class PieChartPainter extends BaseChartPainter<PieChartData> {
           text: span,
           textAlign: TextAlign.center,
           textDirection: TextDirection.ltr,
-          textScaleFactor: holder.textScale,
+          textScaler: TextScaler.linear(holder.textScale),
         )..layout();
 
         canvasWrapper.drawText(
